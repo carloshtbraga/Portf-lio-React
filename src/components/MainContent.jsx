@@ -4,11 +4,11 @@ import AboutContainer from './AboutContainer';
 import ProjectsContainer from './ProjectsContainer';
 import TechnologiesContainer from './TechnologiesContainer';
 
-function MainContent() {
+function MainContent({theme}) {
     return (
-        <main id='main-content'>
-            <AboutContainer />
-            <TechnologiesContainer />
+        <main id={theme === 'dark' ? 'main-content' : 'main-contentlight'}>
+            <AboutContainer theme={theme}/>
+            <TechnologiesContainer theme={theme}/>
         </main>
     );
 }

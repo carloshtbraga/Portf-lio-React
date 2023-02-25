@@ -6,6 +6,8 @@ import {
     DiJsBadge,
     DiMysql,
     DiReact,
+    DiPython,
+    DiSass,
 } from 'react-icons/di';
 
 import '../styles/components/technologiescontainer.sass'
@@ -16,13 +18,15 @@ const technologies = [
     {name:'JavaScript', icon: <DiJsBadge />},
     {name:'Node', icon: <DiNodejsSmall />},
     {name:'MySQL', icon: <DiMysql />},
-    {name:'React', icon: <DiReact />}
+    {name:'React', icon: <DiReact />},
+    {name:'Sass', icon: <DiSass />},
+    {name:'Python', icon: <DiPython />}
 
 ]
 
-function TechnologiesContainer() {
+function TechnologiesContainer({theme}) {
     return (
-        <section className='technologies-container'>
+        <section className={theme === 'dark' ?'technologies-container' : 'technologies-containerlight'}>
             <h2>Tecnologias</h2>
             <div className='technologies-grid'>
                 {technologies.map((tech) => (

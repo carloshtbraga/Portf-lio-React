@@ -12,19 +12,73 @@
     position: relative
     padding: 3rem 0
 
-    img
+    .foto
         max-width: 40%
         border-radius: variables.$container-border-radius
         position: absolute
-        top:-3rem
+        top:-2rem
         box-shadow: 5px 5px 20px rgba(3, 219, 165, 0.678)
     .title
         color: variables.$text-color-senconday
         background-color: variables.$bg-color-secondary
-        border-radius: variables.$card-border-radius
+        border-radius: 5px
         margin-top: 12rem
         padding: .8rem 1.2rem
         
     .btn
         @include mixins.btn
         
+    button
+        margin-top: 20px   
+        color: #1fbeb7
+        font-weight: bold
+        background-color: variables.$bg-color
+        padding: .2rem
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 5px
+
+    .sun
+        width: 30px
+
+#sidebarlight
+    background-color: #e4e4e4
+    flex: 1 1 0
+    border-radius: variables.$container-border-radius
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    position: relative
+    padding: 3rem 0
+
+    .foto
+        max-width: 40%
+        border-radius: variables.$container-border-radius
+        position: absolute
+        top:-2rem
+        box-shadow: 5px 5px 20px rgba(124, 124, 124, 0.678)
+    .title
+        color: variables.$text-color-senconday
+        background-color: #dfffd7
+        border-radius: 5px
+        margin-top: 12rem
+        padding: .8rem 1.2rem
+        
+    .btn
+        @include mixins.btndark
+        
+    button
+        margin-top: 20px   
+        color: #1fbeb7
+        font-weight: bold
+        background-color: variables.$bg-color
+        padding: .2rem
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 5px
+
+    .sun
+        width: 30px

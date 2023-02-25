@@ -44,3 +44,49 @@
 
         #pin-icon
                             color:#07bdb4
+                            
+
+#informationlight
+    @include mixins.center
+    flex-direction: column
+    background-color: #ececec
+    padding: 1rem
+    margin-bottom: 2rem
+    text-align: left
+    width: 90%
+    border-radius: variables.$card-border-radius
+
+    .info-card
+        // background-color: red
+        @include mixins.center
+        justify-content: start
+        gap: 1rem
+        padding-bottom: .8rem
+        margin-bottom: .8rem
+        border-bottom: 1px solid #444
+        width: 100%
+
+        h3
+            color: black
+            font-size: .8rem
+            margin-bottom: .5rem
+
+        p
+            color: black
+            font-weight: bold
+        svg
+            background-color: variables.$bg-color
+            padding: .4rem
+            width: 2rem
+            height: 2rem
+            border-radius: variables.$card-border-radius
+
+        #phone-icon
+              color:#07bdb4
+        #email-icon
+                            color:#07bdb4
+
+
+        #pin-icon
+                            color:#07bdb4
+

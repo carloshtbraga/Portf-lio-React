@@ -34,3 +34,33 @@
         @include mixins.btn
         align-items: start
       
+#main-contentlight
+    background-color: #e4e4e4
+    flex: 2 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+
+    section
+        display: flex
+        flex-direction: column
+
+    h2
+        background: variables.$gradient2
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin-bottom: 1.3rem
+        @include mixins.center
+        justify-content: start
+        gap: .8rem
+        
+
+        &:after
+            @include mixins.gradient-border
+
+    p
+        color: black
+        margin-bottom: 2rem
+        line-height: 1.4rem
+        
+
+   

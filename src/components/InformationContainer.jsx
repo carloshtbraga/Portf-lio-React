@@ -2,9 +2,9 @@ import React from 'react';
 import '../styles/components/informationcontainer.sass';
 import {AiFillPhone, AiOutlineMail, AiFillEnvironment} from 'react-icons/ai';
 
-function InformationContainer() {
+function InformationContainer({theme}) {
     return (
-        <section id='information'>
+        <section id={theme === 'dark' ? 'information' : 'informationlight'}>
             <div className="info-card">
                <AiFillPhone id='phone-icon'/>
                <div>

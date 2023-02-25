@@ -28,3 +28,32 @@
         background: variables.$gradient
         > svg
             color: variables.$text-color
+
+
+#social-networkslight
+    @include mixins.center
+    gap: 1rem
+    margin: 1rem 0
+
+    .social-btn
+        padding: .6rem
+        background-color: variables.$bg-color-secondary
+        border-radius: variables.$card-border-radius
+        color: #dfffd7
+        font-size: 2.3rem
+        @include mixins.center
+        margin-top: 2rem
+        margin-bottom: 2rem
+
+
+    #linkedin
+        color:#007eb1
+    #github
+        color: #111
+    #instagram
+        color: #bc2a8d
+    
+    :hover
+        background: variables.$gradient
+        > svg
+            color: #dfffd7

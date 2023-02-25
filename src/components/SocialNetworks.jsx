@@ -8,11 +8,11 @@ const socialNetowkrs = [
     {name: 'instagram', icon: <FaInstagram />}
 ]
 
-function SocialNetworks() {
+function SocialNetworks({theme}) {
     return (
-        <section id='social-networks'>
+        <section id={theme === 'dark' ? 'social-networks' : 'social-networkslight'}>
             {socialNetowkrs.map((e) => (
-                <a href="" className='social-btn' id={e.name} key={e.name}>
+                <a href="https://www.linkedin.com/in/carloshtbraga/" target='_blank' className='social-btn' id={e.name} key={e.name}>
                     {e.icon}
                 </a>
             ))}
