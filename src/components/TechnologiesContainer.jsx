@@ -10,19 +10,29 @@ import {
     DiSass,
 } from 'react-icons/di';
 
+import Python from '../img/python.png'
+import HTML from '../img/html.png'
+import CSS from '../img/css-3.png'
+import GitHub from '../img/github-sign.png'
+import Node from '../img/node-js.png'
+import Sass from '../img/sass.png'
+import JS from '../img/java-script.png'
+import Reacti from '../img/structure.png'
+
 import '../styles/components/technologiescontainer.sass'
 
 const technologies = [
-    {name:'HTML5', icon: <DiHtml5 />},
-    {name:'CSS3', icon: <DiCss3 />},
-    {name:'JavaScript', icon: <DiJsBadge />},
-    {name:'Node', icon: <DiNodejsSmall />},
-    {name:'MySQL', icon: <DiMysql />},
-    {name:'React', icon: <DiReact />},
-    {name:'Sass', icon: <DiSass />},
-    {name:'Python', icon: <DiPython />}
+    {name:'HTML5', icon: HTML},
+    {name:'CSS3', icon: CSS},
+    {name:'JavaScript', icon: JS},
+    {name:'Node', icon: Node},
+    {name:'GitHub', icon: GitHub},
+    {name:'React', icon: Reacti},
+    {name:'Sass', icon: Sass},
+    {name:'Python', icon: Python}
 
 ]
+
 
 function TechnologiesContainer({theme}) {
     return (
@@ -34,11 +44,10 @@ function TechnologiesContainer({theme}) {
                   className="technology-card" 
                   id={tech.name}
                   key={tech.name}>
-                    {tech.icon}
+                    <img src={tech.icon} alt={tech.name} />
                     <div className='technology-info'>
                         <h3>{tech.name}</h3>
                     </div>
-
                   </div>  
                 ))}
             </div>
