@@ -6,24 +6,37 @@
     align-items: center
 
 
-@mixin btn
-    padding: 1rem 1.2rem
-    color: variables.$text-color
-    background: variables.$gradient
-    text-decoration: none
-    border-radius: 0.5rem
-    width: 200px
-    // border: 1px solid black
+@mixin btn 
+  padding: 1rem 1.2rem
+  color: variables.$text-color
+  background: variables.$gradient
+  text-decoration: none
+  border-radius: 0.5rem
+  width: 200px
+  
+  &:hover 
+    transition: 2s ease-in-out
+    color: black
+  
+
+    
 
 @mixin gradient-border
     content: ""
     background-color: variables.$gradient
     height: 3px
     width: 40%
+
 @mixin btndark
-    padding: 1rem 1.2rem
-    color: variables.$text-color
-    background: variables.$gradient2
-    text-decoration: none
-    border-radius: 0.5rem
-    width: 200px
+  padding: 1rem 1.2rem
+  color: variables.$text-color
+  background: variables.$gradient2
+  text-decoration: none
+  border-radius: 0.5rem
+  width: 200px
+  
+  &:hover 
+    transition: 2s ease-in-out
+    color: #00ffdd
+
+   

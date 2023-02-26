@@ -2,7 +2,19 @@
 @use '../mixins'
 
 .technologies-container
+    transition: 1s ease-in-out
     margin-bottom: 1rem
+    input
+        width: 400px
+        background-color: rgb(30,30,30)
+        color: #00e7dc
+        transition: 1s ease-in-out
+    select
+        width: 100px
+        background-color: rgb(30,30,30)
+        color: #00e7dc
+        transition: 1s ease-in-out
+
     .technologies-grid
         display: flex
         flex-wrap: wrap
@@ -22,7 +34,14 @@
             
             img
                 width: 60px
+            
+        #JavaScript
+            img
+                  margin-left: 30px
 
+        #Sass
+            img
+                  margin-right: 10px
             // svg
             //     font-size: 5rem
         
@@ -52,7 +71,14 @@
         //         color:#564263
 
 .technologies-containerlight
+
+    transition: 1s ease-in-out
     margin-bottom: 1rem
+
+    input
+        width: 400px
+        transition: 1s ease-in-out
+
     .technologies-grid
         display: flex
         flex-wrap: wrap
@@ -72,6 +98,13 @@
 
             img
                 width: 60px
+
+        #JavaScript
+            img
+                  margin-left: 30px
+        #Sass
+            img
+                  margin-right: 10px
 
         //     svg
         //         font-size: 5rem

@@ -2,6 +2,7 @@
 @use '../mixins'
 
 #sidebar
+    transition: 1s ease-in-out
     background-color: variables.$bg-color
     flex: 1 1 0
     border-radius: variables.$container-border-radius
@@ -27,7 +28,14 @@
         
     .btn
         @include mixins.btn
+        transition: 1s ease-in-out
+
+    #range
+        width: 80px
         
+
+
+
     button
         margin-top: 20px   
         color: #1fbeb7
@@ -38,11 +46,15 @@
         justify-content: center
         align-items: center
         border-radius: 5px
+        &:hover
+            cursor: pointer
+        
 
     .sun
         width: 30px
 
 #sidebarlight
+    transition: 1s ease-in-out
     background-color: #e4e4e4
     flex: 1 1 0
     border-radius: variables.$container-border-radius
@@ -67,8 +79,13 @@
         padding: .8rem 1.2rem
         
     .btn
+        transition: 1s ease-in-out
         @include mixins.btndark
+
+    #range
+        width: 80px
         
+
     button
         margin-top: 20px   
         color: #1fbeb7
@@ -79,6 +96,8 @@
         justify-content: center
         align-items: center
         border-radius: 5px
+        &:hover
+            cursor: pointer
 
     .sun
         width: 30px

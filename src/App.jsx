@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import './styles/components/app.sass';
 
 function App() {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
 
 
   return (
