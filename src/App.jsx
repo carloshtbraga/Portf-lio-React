@@ -7,8 +7,8 @@ import React, { useState } from 'react';
 import './styles/components/app.sass';
 import Header from './components/Header';
 
-function App() {
-  const [theme, setTheme] = useState('light')
+function App({theme,setTheme}) {
+  
 
 
   return (
