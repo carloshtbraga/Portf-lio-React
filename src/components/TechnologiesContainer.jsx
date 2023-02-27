@@ -3,7 +3,7 @@ import { technologies } from "../services/variables";
 
 import "../styles/components/technologiescontainer.sass";
 
-function TechnologiesContainer({ theme }) {
+function TechnologiesContainer({ theme, en }) {
  
   const [search, setSearch] = useState("");
   const [selectedType, setSelectedType] = useState("");
@@ -32,7 +32,7 @@ function TechnologiesContainer({ theme }) {
           : "technologies-containerlight"
       }
     >
-      <h2>Tecnologias</h2>
+      <h2>{en === 'no' ? 'Tecnologias' : 'Technologies'}</h2>
       <div>
         <label htmlFor="oi">
           <input
@@ -40,7 +40,7 @@ function TechnologiesContainer({ theme }) {
             id="oi"
             onChange={({ target: { value } }) => setSearch(value)}
             value={search}
-            placeholder="Pesquise pelo nome da tecnologia"
+            placeholder={en === 'no' ? "Pesquise pelo nome da tecnologia" : 'Type the technology name'}
           />
         </label>
         <select

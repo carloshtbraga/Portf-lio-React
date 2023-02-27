@@ -8,7 +8,7 @@ import sun from "../img/Sun.svg";
 import moon from "../img/Moon.svg";
 import squid from "../img/squid.mp3";
 import { useRef, useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function Sidebar({ theme, setTheme }) {
   const audioRef = useRef(null);
@@ -40,7 +40,7 @@ function Sidebar({ theme, setTheme }) {
       <button className="btn" onClick={() => navigate("/projetos")}>
         Ver projetos
       </button>
-      <button onClick={() => navigate('/exercicios')} className="btn">
+      <button onClick={() => navigate("/exercicios")} className="btn">
         Ver Exercícios
       </button>
       <button type="button" onClick={handleclick} className="btn2">
