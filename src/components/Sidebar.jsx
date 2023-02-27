@@ -32,7 +32,6 @@ function Sidebar({ theme, setTheme }) {
     <aside id={theme === "dark" ? "sidebar" : "sidebarlight"}>
       <img src={Picture} alt="Foto Carlos" className="foto" />
       <p className="title">Desenvolvedor</p>
-      <input type="checkbox"/>
       <SocialNetworks theme={theme} setTheme={setTheme} />
       <InformationContainer theme={theme} setTheme={setTheme} />
       <a href="" className={"btn"}>
