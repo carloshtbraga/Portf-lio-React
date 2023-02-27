@@ -5,17 +5,20 @@ import React, { useState } from 'react';
 
 
 import './styles/components/app.sass';
+import Header from './components/Header';
 
 function App() {
   const [theme, setTheme] = useState('light')
 
 
   return (
+    <main>
     <div id={theme === 'dark' ? 'portfolio' : 'portfoliolight'}>
-     <h1>Carlos Henrique Tonini Braga</h1>
+     <Header theme={theme}/>
      <Sidebar theme={theme} setTheme={setTheme}/>
      <MainContent theme={theme} setTheme={setTheme}/>
     </div>
+    </main>
     
   )
 }

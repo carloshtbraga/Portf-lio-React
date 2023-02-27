@@ -30,14 +30,18 @@
     .btn
         @include mixins.btn
         transition: 1s ease-in-out
-
+        font-size: 15px
+        margin-bottom: 3px
+        margin-top:3px
+        &:hover
+            cursor: pointer
     #range
         width: 80px
         
 
 
 
-    button
+    .btn2
         margin-top: 20px   
         color: #1fbeb7
         font-weight: bold
@@ -80,14 +84,19 @@
         padding: .8rem 1.2rem
         color: black
     .btn
-        transition: 1s ease-in-out
         @include mixins.btndark
+        transition: 1s ease-in-out
+        font-size: 15px
+        margin-bottom: 3px
+        margin-top:3px
+        &:hover
+            cursor: pointer
 
     #range
         width: 80px
         
 
-    button
+    .btn2
         margin-top: 20px   
         color: #1fbeb7
         font-weight: bold

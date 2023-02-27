@@ -7,12 +7,13 @@ import InformationContainer from "./InformationContainer";
 import sun from "../img/Sun.svg";
 import moon from "../img/Moon.svg";
 import squid from "../img/squid.mp3";
-import { useRef } from "react";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 function Sidebar({ theme, setTheme }) {
   const audioRef = useRef(null);
   const [volume, setVolume] = useState(1);
+  const navigate = useNavigate();
 
   const handleclick = () => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
@@ -36,19 +37,19 @@ function Sidebar({ theme, setTheme }) {
       <a href="" className={"btn"}>
         Download currículo
       </a>
-      <br></br>
-      <a href="/projetos" className="btn">
-        Ver Projetos
-      </a>
-      <br></br>
-      <a href="/exercicios" className="btn">
+      <button className="btn" onClick={() => navigate("/projetos")}>
+        Ver projetos
+      </button>
+      <button onClick={() => navigate('/exercicios')} className="btn">
         Ver Exercícios
-      </a>
-      <button type="button" onClick={handleclick}>
+      </button>
+      <button type="button" onClick={handleclick} className="btn2">
         {theme === "dark" ? "Light Mode" : "Dark Mode"}
         <img src={theme === "dark" ? sun : moon} alt="oi" className="sun" />
       </button>
-      <button onClick={tocarMusica}>Música ambiente</button>
+      <button onClick={tocarMusica} className="btn2">
+        Música ambiente
+      </button>
       <br />
       <input
         id="range"
