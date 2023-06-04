@@ -40,9 +40,11 @@ function Sidebar({ theme, setTheme }) {
       <button className="btn" onClick={() => navigate("/projetos")}>
         Ver projetos
       </button>
-      <button onClick={() => navigate("/exercicios")} className="btn">
-        Ver Exercícios
+      <a href="https://devs4-good.vercel.app/" target="_blank">
+      <button className="btn">
+        Minha Empresa
       </button>
+      </a>
       <button type="button" onClick={handleclick} className="btn2">
         {theme === "dark" ? "Light Mode" : "Dark Mode"}
         <img src={theme === "dark" ? sun : moon} alt="oi" className="sun" />

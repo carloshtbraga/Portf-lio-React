@@ -5,7 +5,7 @@ import Exercicios from '../pages/Exercicios';
 import Projetos from '../pages/Projetos';
 
 function Rotas() {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dark')
     return (
         <div>
     <BrowserRouter>

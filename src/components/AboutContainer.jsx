@@ -30,11 +30,11 @@ function AboutContainer({ theme, en, setEn }) {
       <audio ref={audioRef} src={en === 'yes' ? english : port}/>
       <br />
 
-      <p>
+      
         {en === "no"
-          ? "Prazer! Obrigado pela visita! Tenho 37 anos e descobri minha paixão pela programação web após fazer um curso introdutório na Trybe. No momento sou aluno de Desenvolvimento Web na Trybe e estou fazendo um curso presencial de programação Web Python no Senac."
-          : "Pleasure! Thank you for the visit! Im 37 years old and discovered my passion for web programming after taking an introductory course at Trybe. Im currently a Web Development student at Trybe and Im also taking an in-person Python Web Programming course at Senac"}
-      </p>
+          ? <p> Prazer! Obrigado pela visita! Sou o Carlos, fundador da <a target="_blank" href="https://devs4-good.vercel.app/">Devs4Good</a>, uma empresa sem fins lucrativos que cria sites e soluções para Ongs e projetos sociais. Sempre estive envolvido em projetos sociais e nessa minha jornada de desenvolvedor não seria diferente. Atualmente sou formado como full stack pela trybe e full stack em python pelo Senac RJ</p> 
+          : <p> Nice to meet you! Thank you for visiting! I'm Carlos, the founder of <a href="https://devs4-good.vercel.app/" target="_blank">Devs4Good</a>, a non-profit organization that creates websites and solutions for NGOs and social projects. I have always been involved in social projects, and on this journey as a developer, it is no different. Currently, I am a full-stack graduate from Trybe and also hold a full-stack Python certification from Senac RJ.</p> }
+      
     </section>
   );
 }
