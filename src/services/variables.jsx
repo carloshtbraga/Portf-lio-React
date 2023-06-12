@@ -22,6 +22,6 @@ export const technologies = [
   { name: "TailWind", icon: TailWind, type: "Front-end" },
   { name: "HTML5", icon: HTML, type: "Front-end" },
   { name: "CSS3", icon: CSS, type: "Front-end" },
-  { name: "JavaScript", icon: JS, type: "Language" },
+  { name: "JS", icon: JS, type: "Language" },
   { name: "Git", icon: Git, type: "Outros" },
 ];

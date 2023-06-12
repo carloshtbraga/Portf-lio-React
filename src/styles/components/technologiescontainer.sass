@@ -34,6 +34,10 @@
             
             img
                 width: 60px
+                transition: 1s
+            img:hover
+                transform: scale(1.5)
+                transition: 1s
             
         #JavaScript
             img
@@ -136,3 +140,78 @@
         //     svg
         //         color:#564263
 
+@media (max-width: 630px)
+    .technologies-container
+        transition: 1s ease-in-out
+        margin-bottom: 1rem
+        text-align: center
+        input
+            width: 220px
+            background-color: rgb(30,30,30)
+            color: #00e7dc
+            transition: 1s ease-in-out
+            
+        select
+            width: 100px
+            background-color: rgb(30,30,30)
+            color: #00e7dc
+            transition: 1s ease-in-out
+
+        .technologies-grid
+            display: flex
+            flex-wrap: wrap
+            gap: 0.2rem
+
+            .technology-card
+                @include mixins.center
+                gap: 1rem
+                padding: 1rem
+                border: 1px solid #09fff3
+                width: 45%
+                border-radius: variables.$card-border-radius
+            
+                h3
+                    color: variables.$text-color
+                    margin-bottom: 1rem
+                    font-size: 10px
+            
+                img
+                    width: 30px
+
+@media (max-width: 630px)
+    .technologies-containerlight
+        transition: 1s ease-in-out
+        margin-bottom: 1rem
+        text-align: center
+        input
+            width: 220px
+            background-color: rgb(30,30,30)
+            color: #00e7dc
+            transition: 1s ease-in-out
+            
+        select
+            width: 100px
+            background-color: rgb(30,30,30)
+            color: gray
+            transition: 1s ease-in-out
+
+        .technologies-grid
+            display: flex
+            flex-wrap: wrap
+            gap: 0.2rem
+
+            .technology-card
+                @include mixins.center
+                gap: 1rem
+                padding: 1rem
+                border: 1px solid black
+                width: 45%
+                border-radius: variables.$card-border-radius
+            
+                h3
+                    color: black
+                    margin-bottom: 1rem
+                    font-size: 10px
+            
+                img
+                    width: 30px
