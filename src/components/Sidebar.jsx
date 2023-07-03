@@ -40,7 +40,7 @@ function Sidebar({ theme, setTheme }) {
       <button className="btn" onClick={() => navigate("/projetos")}>
         Ver projetos
       </button>
-      <a href="https://devs4-good.vercel.app/" target="_blank">
+      <a href="https://www.devs4good.com.br/" target="_blank">
       <button className="btn">
         Minha Empresa
       </button>
