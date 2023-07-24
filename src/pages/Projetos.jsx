@@ -7,24 +7,31 @@ import solar from "../img/solar.png";
 import triunfo from "../img/triunfo.png";
 import pc from '../img/pc.png'
 import pc2 from '../img/pc2.png'
+import Carrousel from "../components/Carrousel";
+import github from '../img/github.png'
 
 function Projetos({ theme }) {
   return (
     <div className={theme === "dark" ? "exercicios1" : "exercicios1light"}>
       <h1>Projetos:</h1>
       <div className={theme === "dark" ? "exercicios2" : "exercicios2light"}>
-      <a target="_blank" href="https:www.devs4good.com.br/">
-          <img src={pc} alt="" />
+      {/* <a target="_blank" href="https:www.devs4good.com.br/">
+          <img className='imgprojeto' src={pc} alt="" />
         </a>
-        <img src={pc2} alt="" />
+        <img className='imgprojeto' src={pc2} alt="" />
         <a target="_blank" href="https://trivia-kohl.vercel.app/">
-          <img src={Trivia} alt="" />
+          <img className='imgprojeto' src={Trivia} alt="" />
         </a>
-        <img src={tunes} alt="" />
-        <img src={wallet} alt="" />
-        <img src={solar} alt="" />
-        <img src={triunfo} alt="" />
+        <img className='imgprojeto' src={tunes} alt="" />
+        <img className='imgprojeto' src={wallet} alt="" />
+        <img className='imgprojeto' src={solar} alt="" />
+        <img className='imgprojeto' src={triunfo} alt="" /> */}
+        <Carrousel />
+ <br />
+       
+        <h5><a href="https://github.com/carloshtbraga" target="_blank"><img className='git'src={github} alt=""/></a>  Visite meu github para conhecer todos os meus repositórios, lá tenho muitas apis, exercícios e projetos, todos com read-me ;D</h5>
       </div>
+      
     </div>
   );
 }

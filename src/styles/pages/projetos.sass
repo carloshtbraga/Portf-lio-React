@@ -12,6 +12,11 @@
         background: variables.$gradient
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+    h5
+        margin-top: 20px
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
 
 
     .exercicios2
@@ -19,18 +24,28 @@
         padding: 3rem
         background-color: #111111bb
         width: 90%
+        height: fit-content
         text-align: center
         font-size: 1rem
         border-radius: variables.$container-border-radius
         .btn
             @include mixins.btn
             color: black
-        img
-          padding: 20px
-          width: 400px
-          height: 250px
-        //   border: 2px solid #00e1ff
-          border-radius: 6px       
+        // img
+        //   padding: 20px
+        //   width: 400px
+        //   height: 250px
+        // //   border: 2px solid #00e1ff
+        //   border-radius: 6px
+        .git
+            width: 25px
+            
+    @media (max-width: 630px)
+        .imgprojeto
+            padding: 5px
+            width: 200px
+            height: 120px
+        
 
 
 
@@ -46,6 +61,12 @@
         background: variables.$gradient
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+    @media (max-width: 630px)
+        .imgprojeto
+            padding: 5px
+            width: 200px
+            height: 120px
+        
 
 
     .exercicios2light
@@ -61,9 +82,11 @@
         .btn
             @include mixins.btn
             color: black
-        img
-            padding: 20px
-            width: 400px
-            height: 250px
-        //   border: 2px solid #00e1ff
-            border-radius: 6px           
+        // img
+        //     padding: 20px
+        //     width: 400px
+        //     height: 250px
+        // //   border: 2px solid #00e1ff
+        //     border-radius: 6px 
+        .git
+            width: 25px          

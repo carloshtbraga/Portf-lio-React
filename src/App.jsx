@@ -2,6 +2,7 @@
 import MainContent from './components/MainContent';
 import Sidebar from './components/Sidebar';
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import './styles/components/app.sass';

@@ -34,7 +34,7 @@ function Sidebar({ theme, setTheme }) {
       <p className="title">Desenvolvedor</p>
       <SocialNetworks theme={theme} setTheme={setTheme} />
       <InformationContainer theme={theme} setTheme={setTheme} />
-      <a href="" className={"btn"}>
+      <a href="/src/img/curriculum.pdf" download="Carlos-Tonni-Curriculum.pdf" className={"btn"}>
         Download currículo
       </a>
       <button className="btn" onClick={() => navigate("/projetos")}>
