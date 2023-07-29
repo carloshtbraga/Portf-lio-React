@@ -29,7 +29,7 @@ function Projetos({ theme }) {
         <Carrousel />
  <br />
        
-        <h5><a href="https://github.com/carloshtbraga" target="_blank"><img className='git'src={github} alt=""/></a>  Visite meu github para conhecer todos os meus repositórios, lá tenho muitas apis, exercícios e projetos, todos com read-me ;D</h5>
+        <h5><a href="https://github.com/carloshtbraga" target="_blank"><img className='git'src={github} alt=""/></a>  Visite meu github para conhecer todos os meus repositórios, lá tenho muitas apis, exercícios e projetos, todos com read-me</h5>
       </div>
       
     </div>
