@@ -20,7 +20,7 @@ function Carrousel() {
           />
         </a>
           <Carousel.Caption>
-            <h3>Apadrinhe um Sorriso</h3>
+            <h3>Front-End: Apadrinhe um Sorriso</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carousel-item">
@@ -32,7 +32,7 @@ function Carrousel() {
           />
           </a>
           <Carousel.Caption>
-            <h3>Devs4Good</h3>
+            <h3>Front-End: Devs4Good</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carousel-item">
@@ -44,7 +44,7 @@ function Carrousel() {
           />
           </a>
           <Carousel.Caption>
-            <h3>App de Receitas</h3>
+            <h3>Front-End: App de Receitas</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carousel-item">
@@ -56,7 +56,7 @@ function Carrousel() {
           />
           </a>
           <Carousel.Caption>
-            <h3>ONGDogs</h3>
+            <h3>Front-End: ONGDogs</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
